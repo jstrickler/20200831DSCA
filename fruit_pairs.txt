@@ -1,0 +1,15 @@
+watermelon	watermelon
+mango	Kiwi
+nectarine	raspberry
+nectarine	Nectarine
+peach	kumquat
+blackberry	Lime
+papaya	grapefruit
+nectarine	Tangerine
+apple	pineapple
+durian	Cantelope
+orange	honeydew
+lime	grape
+lemon	Plum
+grapefruit	nectarine
+apple	Apricot
