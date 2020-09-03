@@ -5,7 +5,7 @@ import random
 fruits = ["pomegranate", "cherry", "apricot", "date", "apple",
 "lemon", "kiwi", "orange", "lime", "watermelon", "guava",
 "papaya", "fig", "pear", "banana", "tamarind", "persimmon",
-"elderberry", "peach", "blueberry", "lychee", "grape" ]
+"elderberry", "peach", "blueberry", "lychee", "grape"]
 
 
 for i in range(1, 11):

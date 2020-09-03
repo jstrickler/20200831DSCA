@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+from shutil import make_archive
 from zipfile import ZipFile, ZIP_DEFLATED
 import os.path
 
@@ -16,3 +16,7 @@ for base in "parrot tyger knights alice poe_sonnet spam".split():
     filename = os.path.join("../DATA", base + '.txt')
     print("adding {} as {}".format(filename, base + '.txt'))
     wzip.write(filename, base + '.txt')  # <6>
+
+make_archive('textfiles', "zip", '../DATA')
+make_archive('textfiles', "tar", '../DATA')
+make_archive('textfiles', "gztar", '../DATA')
