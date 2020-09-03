@@ -34,4 +34,7 @@ potus = {
 with open('potus.yaml', 'w') as potus_out:
     yaml.dump(potus, potus_out)
 
-yaml.dump(potus, sys.stdout)
+# yaml.dump(potus, sys.stdout)
+
+yaml_string = yaml.dump(potus)
+print(yaml_string)

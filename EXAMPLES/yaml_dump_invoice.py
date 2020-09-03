@@ -6,7 +6,8 @@ import yaml
 
 
 with open('../DATA/invoice.yaml') as invoice_in:
-    invoice_data = yaml.load(invoice_in, Loader=yaml.BaseLoader)
+    # invoice_data = yaml.load(invoice_in, Loader=yaml.BaseLoader)
+    invoice_data = yaml.safe_load(invoice_in)
 
 pprint(invoice_data)
 
