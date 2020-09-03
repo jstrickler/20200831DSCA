@@ -1,0 +1,99 @@
+
+** ATOMS **  match one character
+
+pat    "I spat on the street"   "a pattern language"   "A bad spate of vandalism"  'I gave the dog a pat'
+
+# if s == "pat"
+
+p.t    "spittoon"   "pet rocks"  "keep to the right"
+
+p..t   "the poet in the parlour"   "spittoon"
+
+p[aeiou]t
+
+[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]   # ssn
+
+pumpkin[ \t]spice
+
+pumpkin[^a-zA-Z]spice
+
+[a-zA-Z0-9_]   \w
+[^a-zA-Z0-9_]   \W
+
+[ \t\n\r\f\b]  \s
+[^\t\n\r\f\b]  \S
+
+[0-9]  \d
+[^0-9] \D
+
+\d\d\d-\d\d-\d\d\d\d
+
+#  .  [abc] [^abc]   \w \d \s
+
+  \. \[  \\
+
+** ANCHORS ** aka assertions
+
+^abc    abc must be at start of string
+abc$    abc must be at end of string
+
+^abc$   string must be abc
+
+\bthe\b   match "the" as a word, not embedded in a larger word
+
+#  plus lookaround...
+
+pat
+p[aeiou]t
+
+pa+t    + one or more
+pa*t    * zero or more
+
+                repeat
+atom 1:  p      1
+atom 2:  a*     0 or more
+atom 3:  t      1
+
+\d{3}-\d{2}-\d{4}
+
+\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}
+
+^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}↵
+(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$
+
+*  +  {n} {n,m}  {n,}
+
+p[aeiou]{2,}t
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
